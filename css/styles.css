@@ -1,18 +1,14 @@
 :root {
   --accent-color: #2196f3;
   --main-logo-color: #000000;
-  --second-logo-color: #ffffff;
   --main-link-color: #757575;
   --second-link-color: #212121;
-  --main-bg-color: #ffffff;
-  --second-bg-color: #2f303a;
-  --third-bg-color: #f5f4fa;
-  --fourth-bg-color: #188ce8;
+  --main-bg-color: #2f303a;
+  --white-bg-color: #f5f4fa;
+  --hero-bg-color: #188ce8;
   --main-h-color: #212121;
-  --second-h-color: #ffffff;
   --main-p-color: #757575;
-  --text-bnt-color: #ffffff;
-  --second-p-color: #ffffff;
+  --main-white-color: #ffffff;
 }
 
 body {
@@ -64,9 +60,11 @@ ul {
 .header-link:focus {
   color: var(--accent-color);
 }
-
+.header-link.current {
+  color: var(--accent-color);
+}
 .header {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-white-color);
 }
 
 .header-contact,
@@ -85,7 +83,7 @@ ul {
 /*------------Main------------*/
 
 .hero {
-  background-color: var(--second-bg-color);
+  background-color: var(--main-bg-color);
 }
 
 .title {
@@ -96,7 +94,7 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--second-h-color);
+  color: var(--main-white-color);
 }
 
 .hero-btn {
@@ -108,7 +106,7 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--text-bnt-color);
+  color: var(--main-white-color);
   background-color: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
@@ -116,7 +114,7 @@ ul {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--fourth-bg-color);
+  background-color: var(--hero-bg-color);
 }
 
 /*------------feature---------*/
@@ -147,7 +145,7 @@ ul {
 
 /*-------------Team-----------*/
 .team {
-  background: var(--third-bg-color);
+  background: var(--white-bg-color);
 }
 
 .title-name {
@@ -168,7 +166,7 @@ ul {
 }
 
 .team-items {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-white-color);
 }
 
 /*--------------Footer----------------*/
@@ -177,7 +175,7 @@ ul {
   color: var(--accent-color);
 }
 .footer {
-  background-color: var(--second-bg-color);
+  background-color: var(--main-bg-color);
 }
 .footer-logo {
   font-family: 'Raleway';
@@ -186,16 +184,18 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--second-logo-color);
+  color: var(--main-white-color);
 }
 
 .address-map {
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--second-p-color);
+  color: var(--main-white-color);
 }
 
 .address {
   font-style: normal;
 }
+
+/*--------------Стили для portfolio.html------------------------*/

@@ -131,6 +131,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.section {
+  background-color: var(--main-white-color);
+}
 /*------------Box---------*/
 .title-box,
 .title-team {
@@ -205,6 +208,9 @@ body {
   background-color: var(--main-bg-color);
 }
 /*--------------Стили для portfolio.html------------------------*/
+.menu {
+  background-color: var(--main-white-color);
+}
 .button-menu {
   font-family: inherit;
   font-weight: 500;

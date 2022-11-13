@@ -12,7 +12,8 @@
 }
 
 body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-p-color);
 }
 ul {
   list-style: none;
@@ -20,10 +21,12 @@ ul {
 .link {
   text-decoration: none;
 }
-.link {
+.list {
   list-style: none;
 }
-
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,7 +40,6 @@ ul {
 
 /*------------Header------------*/
 .header-logo {
-  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -87,7 +89,6 @@ ul {
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -118,7 +119,7 @@ ul {
 }
 
 /*------------feature---------*/
-.title-feature {
+.section-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -126,11 +127,11 @@ ul {
   text-transform: uppercase;
   color: var(--main-h-color);
 }
-.features-elem {
+.section-elem {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--main-p-color);
 }
 /*------------Box---------*/
 .title-box,
@@ -145,7 +146,7 @@ ul {
 
 /*-------------Team-----------*/
 .team {
-  background: var(--white-bg-color);
+  background-color: var(--white-bg-color);
 }
 
 .title-name {
@@ -158,6 +159,7 @@ ul {
 }
 
 .desc-work {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
@@ -170,13 +172,7 @@ ul {
 }
 
 /*--------------Footer----------------*/
-.footer-contact:hover,
-.footer-contact:focus {
-  color: var(--accent-color);
-}
-.footer {
-  background-color: var(--main-bg-color);
-}
+
 .footer-logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -187,7 +183,8 @@ ul {
   color: var(--main-white-color);
 }
 
-.address-map {
+.address {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -197,11 +194,23 @@ ul {
 .address {
   font-style: normal;
 }
-
+.footer-contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+.footer {
+  background-color: var(--main-bg-color);
+}
 /*--------------Стили для portfolio.html------------------------*/
 .button-menu {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;

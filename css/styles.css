@@ -1,5 +1,25 @@
+:root {
+  --accent-color: #2196f3;
+  --main-logo-color: #000000;
+  --second-logo-color: #ffffff;
+  --main-link-color: #757575;
+  --second-link-color: #212121;
+  --main-bg-color: #ffffff;
+  --second-bg-color: #2f303a;
+  --third-bg-color: #f5f4fa;
+  --fourth-bg-color: #188ce8;
+  --main-h-color: #212121;
+  --second-h-color: #ffffff;
+  --main-p-color: #757575;
+  --text-bnt-color: #ffffff;
+  --second-p-color: #ffffff;
+}
+
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
+}
+ul {
+  list-style: none;
 }
 .link {
   text-decoration: none;
@@ -7,6 +27,7 @@ body {
 .link {
   list-style: none;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -19,17 +40,17 @@ body {
 }
 
 /*------------Header------------*/
-.header-logo,
-.footer-logo {
+.header-logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  color: var(--main-logo-color);
 }
 .accent {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .header-link {
@@ -37,15 +58,15 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--second-link-color);
 }
 .header-link:hover,
 .header-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--main-bg-color);
 }
 
 .header-contact,
@@ -54,18 +75,17 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  color: #757575;
+  color: var(--main-link-color);
 }
 .header-contact:hover,
 .header-contact:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /*------------Main------------*/
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--second-bg-color);
 }
 
 .title {
@@ -76,11 +96,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  color: #ffffff;
+  color: var(--second-h-color);
 }
 
 .hero-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -88,15 +108,15 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--text-bnt-color);
+  background-color: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--fourth-bg-color);
 }
 
 /*------------feature---------*/
@@ -106,13 +126,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-h-color);
 }
 .features-elem {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--main-p-color);
 }
 /*------------Box---------*/
 .title-box,
@@ -122,38 +142,60 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-h-color);
 }
 
 /*-------------Team-----------*/
 .team {
-  background: #f5f4fa;
+  background: var(--third-bg-color);
 }
 
-.name {
+.title-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-h-color);
 }
 
-.work {
-  font-weight: 400;
+.desc-work {
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--main-p-color);
 }
 
 .team-items {
-  background-color: #ffffff;
+  background-color: var(--main-bg-color);
 }
 
 /*--------------Footer----------------*/
 .footer-contact:hover,
 .footer-contact:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.footer {
+  background-color: var(--second-bg-color);
+}
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--second-logo-color);
+}
+
+.address-map {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--second-p-color);
+}
+
+.address {
+  font-style: normal;
 }

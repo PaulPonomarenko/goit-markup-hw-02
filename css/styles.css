@@ -219,3 +219,7 @@ body {
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
+
+.button-menu.current {
+  background-color: var(--accent-color);
+}

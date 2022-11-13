@@ -221,5 +221,6 @@ body {
 }
 
 .button-menu.current {
+  color: var(--main-white-color);
   background-color: var(--accent-color);
 }
